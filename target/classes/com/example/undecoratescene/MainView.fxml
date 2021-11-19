@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane fx:id="content" prefHeight="545.0" prefWidth="1024.0" styleClass="parent" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.undecoratescene.MainView">
+   <children>
+
+      <HBox fx:id="top" alignment="CENTER_RIGHT" layoutX="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <HBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Main View" textFill="#766f5a">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_stage" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="fa-minus" iconSize="20" styleClass="min-btn" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="999.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_app" prefHeight="30.0" prefWidth="30.0" styleClass="close-btn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="fa-remove" iconSize="20" styleClass="close-btn" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+
+      <VBox layoutX="302.0" layoutY="192.0">
+         <children>
+            <Label prefHeight="42.0" prefWidth="89.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="89.0" text="To" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="89.0" text="Main View" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+
+
+      <JFXButton buttonType="RAISED" layoutX="302.0" layoutY="347.0" onAction="#handleLogout" prefHeight="45.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="login-btn" text="SIGN OUT" />
+   </children>
+</AnchorPane>

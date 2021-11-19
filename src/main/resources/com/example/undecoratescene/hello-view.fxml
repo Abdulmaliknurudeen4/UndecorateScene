@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane fx:id="parent" onDragDone="#onDragDone" onMouseDragged="#onMouseDragged" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.undecoratescene.HelloController">
+   <children>
+      <HBox fx:id="top" alignment="CENTER_RIGHT" layoutX="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <HBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="User Login" textFill="#766f5a">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_stage" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="fa-minus" iconSize="20" styleClass="min-btn" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="999.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_app" prefHeight="30.0" prefWidth="30.0" styleClass="close-btn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="fa-remove" iconSize="20" styleClass="close-btn" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <Pane fx:id="content" layoutX="14.0" layoutY="35.0" prefHeight="545.0" prefWidth="1024.0">
+         <children>
+            <HBox layoutX="370.0" layoutY="161.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #363b41;">
+                     <graphic>
+                        <FontIcon iconColor="#adadad" iconLiteral="fa-user" iconSize="25" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="45.0" prefWidth="45.0" promptText="Username" styleClass="txtfield" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="370.0" layoutY="218.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #363b41;">
+                     <graphic>
+                        <FontIcon iconColor="#adadad" iconLiteral="fa-lock" iconSize="25" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField prefHeight="45.0" prefWidth="210.0" promptText="Password" styleClass="txtfield" />
+               </children>
+            </HBox>
+            <JFXButton buttonType="RAISED" layoutX="370.0" layoutY="285.0" mnemonicParsing="false" onAction="#handle_loging" prefHeight="45.0" prefWidth="250.0" ripplerFill="WHITE" styleClass="login-btn" text="SIGN IN" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
