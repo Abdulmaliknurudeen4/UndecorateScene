@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
         stage.setTitle("Undecorated Scene");
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
-        this.stage = stage;
+        HelloApplication.stage = stage;
         stage.show();
     }
 
